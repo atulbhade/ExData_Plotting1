@@ -26,7 +26,7 @@ plot(reqData$Time, reqData$Sub_metering_1, type = "n", xlab = "", ylab = "Energy
 lines(reqData$Time, reqData$Sub_metering_1, col = "black")
 lines(reqData$Time, reqData$Sub_metering_2, col = "red")
 lines(reqData$Time, reqData$Sub_metering_3, col = "blue")
-legend("topright", c("Sub_metering_1", "Sub_metering_2",lty= 1, "Sub_metering_3"),col = c("black", "red", "blue"), cex = .6)
+legend("topright", c("Sub_metering_1", "Sub_metering_2",lty= 1, "Sub_metering_3"),col = c("black", "red", "blue"), bty = "n",cex = .6)
 plot(reqData$Time, reqData$Global_reactive_power, type = "l", xlab = "datetime", ylab = "global_reactive_power")
 
 #copying plot to png file
